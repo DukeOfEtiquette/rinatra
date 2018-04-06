@@ -1,4 +1,4 @@
-# app.rb
+# server.rb
 require 'sinatra'
 
 class Rinatra < Sinatra::Base
