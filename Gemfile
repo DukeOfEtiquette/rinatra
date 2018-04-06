@@ -6,6 +6,7 @@ gem 'activemodel-serializers-xml'
 gem 'active_model_serializers'
 gem 'mongo_mapper'
 gem 'bson_ext'
+gem 'log_buddy'
 
 group :development do
   gem 'shotgun'

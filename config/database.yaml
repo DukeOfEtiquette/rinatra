@@ -1,0 +1,15 @@
+defaults: &defaults
+  host: localhost
+  port: 27017
+
+development:
+  <<: *defaults
+  database: rinatra_deb
+  logfile: development.log
+    
+production:
+  <<: *defaults
+  database: rinatra_prod
+  logfile: production.log
+    
+environment: development
