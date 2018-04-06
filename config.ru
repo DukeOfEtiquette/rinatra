@@ -1,3 +1,4 @@
 # config.ru
-require './server'
+require File.join(File.dirname(__FILE__), 'routes/server')
+
 run Rinatra
