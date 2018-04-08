@@ -13,4 +13,12 @@ class Rinatra < Sinatra::Base
     res = R.pull 'response'
     res.to_json
   end
+
+  get '/lm' do
+    R = RinRuby.new
+
+    R.eval "source('./lib/r_scripts/lm.R')"
+    res = R.pull 'response'
+    res.to_json
+  end
 end
